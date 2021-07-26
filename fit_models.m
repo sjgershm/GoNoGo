@@ -16,7 +16,6 @@ function [results, bms_results] = fit_models(data,results,models)
     likfuns = {'likfun_start' 'likfun_drift'};
     M = length(likfuns);
     if nargin < 1; load data; end
-    if nargin < 2; results = []; end
     if nargin < 3; models = 1:M; end
     
     for m = models
